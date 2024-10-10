@@ -1,5 +1,4 @@
-/* style.css */
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif; /* Fallback font family */
     text-align: center; /* Center-align text */
@@ -37,4 +36,16 @@ button {
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+/* Styles for the love message */
+#love-message-container {
+    margin-top: 30px; /* Add space above the love message */
+}
+
+.love-text {
+    font-family: 'Sacramento', cursive; /* Ensure Sacramento font is applied */
+    font-size: 52px; /* Match the font size to the question */
+    color: #ff69b4; /* Set the text color to pink */
+    text-align: center; /* Center the text */
 }
