@@ -41,11 +41,12 @@ button {
 /* Styles for the love message */
 #love-message-container {
     margin-top: 30px; /* Add space above the love message */
+    color: #000000 !important; /* Force text color to black */
 }
 
 .love-text {
     font-family: 'Sacramento', cursive; /* Ensure Sacramento font is applied */
     font-size: 52px; /* Match the font size to the question */
-    color: #000000; /* Set the text color to black */
+    color: #000000 !important; /* Set the text color to black with higher priority */
     text-align: center; /* Center the text */
 }
