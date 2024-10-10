@@ -81,10 +81,7 @@ function displayLoveMessage() {
     var loveMessage = document.createElement('div');
     loveMessage.id = 'love-message';
     loveMessage.innerHTML = 'I love you ❤️Tobin❤️'; // Message content
-    loveMessage.style.fontSize = '2em'; // Set font size for the message
-    loveMessage.style.textAlign = 'center'; // Center align the message
-    loveMessage.style.marginTop = '20px'; // Add some spacing from the top
-    loveMessage.style.fontFamily = "'Sacramento', cursive"; // Use the same font family
+    loveMessage.classList.add('love-text'); // Add CSS class to the message
     messageContainer.appendChild(loveMessage); // Append the message to the container
 }
 
