@@ -39,22 +39,6 @@ function flashRainbowColors(callback) {
     }, 2000); // Flash colors for 2 seconds
 }
 
-// Function to display the cat.gif initially
-function displayCat() {
-    // Get the container where the image will be displayed
-    var imageContainer = document.getElementById('image-container');
-    // Create a new Image element for the cat
-    var catImage = new Image();
-    // Set the source (file path) for the cat image
-    catImage.src = 'cat.gif'; // Assuming the cat image is named "cat.gif"
-    // Set alternative text for the image (for accessibility)
-    catImage.alt = 'Cat';
-    // When the cat image is fully loaded, add it to the image container
-    catImage.onload = function() {
-        imageContainer.appendChild(catImage);
-    };
-}
-
 // Function to display the cat-heart.gif
 function displayCatHeart() {
     // Clear existing content in the image container
@@ -75,7 +59,7 @@ function displayCatHeart() {
     };
 }
 
-// Function to display the "I love you ❤️Tobin❤️" message
+// Function to display the "I love you ❤️Tobin❤️" message with the same font
 function displayLoveMessage() {
     var messageContainer = document.getElementById('text-container');
     var loveMessage = document.createElement('div');
@@ -84,7 +68,24 @@ function displayLoveMessage() {
     loveMessage.style.fontSize = '2em'; // Set font size for the message
     loveMessage.style.textAlign = 'center'; // Center align the message
     loveMessage.style.marginTop = '20px'; // Add some spacing from the top
+    loveMessage.style.fontFamily = "'Sacramento', cursive"; // Use the same font family
     messageContainer.appendChild(loveMessage); // Append the message to the container
+}
+
+// Initial call to display the cat.gif, but this will not show up again after clicking "Yes"
+function displayCat() {
+    // Get the container where the image will be displayed
+    var imageContainer = document.getElementById('image-container');
+    // Create a new Image element for the cat
+    var catImage = new Image();
+    // Set the source (file path) for the cat image
+    catImage.src = 'cat.gif'; // Assuming the cat image is named "cat.gif"
+    // Set alternative text for the image (for accessibility)
+    catImage.alt = 'Cat';
+    // When the cat image is fully loaded, add it to the image container
+    catImage.onload = function() {
+        imageContainer.appendChild(catImage);
+    };
 }
 
 // Display the cat.gif initially
