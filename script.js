@@ -1,5 +1,3 @@
-// script.js
-
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
@@ -8,6 +6,7 @@ function selectOption(option) {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
+            displayLoveMessage(); // Display "I love you ❤️Tobin❤️"
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
@@ -15,7 +14,7 @@ function selectOption(option) {
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
-        var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
+        var newSize = parseFloat(currentFontSize) * 2; // Increase font size by * 2px
         yesButton.style.fontSize = newSize + 'px';
     } else {
         // If neither "Yes" nor "No" was clicked, show an alert message
@@ -74,6 +73,18 @@ function displayCatHeart() {
         // Hide the options container
         document.getElementById('options').style.display = 'none';
     };
+}
+
+// Function to display the "I love you ❤️Tobin❤️" message
+function displayLoveMessage() {
+    var messageContainer = document.getElementById('text-container');
+    var loveMessage = document.createElement('div');
+    loveMessage.id = 'love-message';
+    loveMessage.innerHTML = 'I love you ❤️Tobin❤️'; // Message content
+    loveMessage.style.fontSize = '2em'; // Set font size for the message
+    loveMessage.style.textAlign = 'center'; // Center align the message
+    loveMessage.style.marginTop = '20px'; // Add some spacing from the top
+    messageContainer.appendChild(loveMessage); // Append the message to the container
 }
 
 // Display the cat.gif initially
