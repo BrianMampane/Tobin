@@ -46,6 +46,6 @@ button {
 .love-text {
     font-family: 'Sacramento', cursive; /* Ensure Sacramento font is applied */
     font-size: 52px; /* Match the font size to the question */
-    color: #ff69b4; /* Set the text color to pink */
+    color: #000000; /* Set the text color to black */
     text-align: center; /* Center the text */
 }
