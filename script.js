@@ -80,7 +80,7 @@ function displayLoveMessage() {
     var messageContainer = document.getElementById('love-message-container');
     var loveMessage = document.createElement('div');
     loveMessage.id = 'love-message';
-    loveMessage.innerHTML = 'I love you ❤️Tobin❤️'; // Message content
+    loveMessage.innerHTML = 'I love you Tobin❤️'; // Message content
     loveMessage.classList.add('love-text'); // Add CSS class to the message
     messageContainer.appendChild(loveMessage); // Append the message to the container
 }
