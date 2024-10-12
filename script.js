@@ -21,7 +21,7 @@ function selectOption(option) {
 // Function to play the music from the specified start time
 function playMusic() {
     var audio = document.getElementById('background-music');
-    var startTime = 114; // Time in seconds (e.g., 2:00 = 120 seconds)
+    var startTime = 17; // Time in seconds (e.g., 2:00 = 120 seconds)
     
     audio.currentTime = startTime; // Set the starting point of the song
     audio.play(); // Play the song
