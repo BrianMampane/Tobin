@@ -48,7 +48,7 @@ function flashRainbowColors(callback) {
 function displayCat() {
     var imageContainer = document.getElementById('image-container');
     var catImage = new Image();
-    catImage.src = 'cat.gif';
+    catImage.src = 'bow.gif';
     catImage.alt = 'Cat';
     catImage.onload = function() {
         imageContainer.appendChild(catImage);
